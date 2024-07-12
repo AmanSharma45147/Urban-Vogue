@@ -5,12 +5,13 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif, "Times New Roman", Times, serif;
+  font-family: "Poppins", sans-serif;
 }
 .navbar {
   display: flex;
+
   align-items: center;
-  padding: 10px;
+  padding: 6px;
 }
 nav {
   flex: 1;
@@ -23,7 +24,6 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin-right: 20px;
-  position: relative;
 }
 nav ul li a {
   font-size: 17px;
@@ -43,6 +43,7 @@ p {
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
+  padding-top: 10px;
 }
 
 .row {
@@ -139,7 +140,7 @@ h4 {
   font-size: 14px;
 }
 .col-4:hover {
-  transform: translateY(-5px);
+  /*transform: translateY(-5px);*/
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .row .col-4 p {
@@ -241,13 +242,55 @@ nav .dropdown ul li {
 nav ul li:hover .dropdown {
   background: #555;
   display: block;
-  position: absolute;
   border-radius: 5px;
+  position: absolute;
 }
 .dropdown {
   display: none;
 }
 .dropdown ul li:hover {
-  background-color: brown;
   border-radius: 5px;
+  background-color: brown;
+}
+#nav1 {
+  position: fixed;
+  padding: 10px;
+  width: 120px;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+#ul1 {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.colortext_1 {
+  color: #283747;
+}
+.colortext_2 {
+  color: #283747;
+}
+.colortext_3 {
+  color: #283747;
+}
+.colortext_4 {
+  color: #283747;
+}
+.li_1 {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+#ul1 .li_1 .colortext_1:hover {
+  color: red;
+}
+#ul1 .li_1 .colortext_2:hover {
+  color: black;
+}
+#ul1 .li_1 .colortext_3:hover {
+  color: orange;
+}
+#ul1 .li_1 .colortext_4:hover {
+  color: blue;
 }
